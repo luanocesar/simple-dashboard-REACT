@@ -1,7 +1,9 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
+import {
+  Box,
+  Button
+} from '@mui/material';
 import { DataGrid, GridCellModes } from '@mui/x-data-grid';
 import {
   randomCreatedDate,
@@ -73,6 +75,14 @@ function EditToolbar(props) {
         sx={{ ml: 1 }}
       >
         Cancel
+      </Button>
+      <Button
+        onClick={handleCancel}
+        onMouseDown={handleMouseDown}
+        variant="outlined"
+        sx={{ ml: 1 }}
+      >
+        + NEW
       </Button>
     </Box>
   );
